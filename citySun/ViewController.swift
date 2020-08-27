@@ -17,13 +17,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cityLabel: UILabel!
     
+    @IBOutlet weak var sunriseLabel: UILabel!
+    @IBOutlet weak var sunsetLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
+        self.configureWatchKitSesstion()
         // Do any additional setup after loading the view.
         print("working")
 //        NotificationCenter.default.addObserver(forName: .saveNotificationName, object: nil, queue: nil) { (notification) in
@@ -35,11 +33,18 @@ class ViewController: UIViewController {
 
         
     }
+    
+    func configureWatchKitSesstion() {
+      
+      if WCSession.isSupported() {
+        session = WCSession.default
+        session?.delegate = self
+        session?.activate()
+      }
+    }
 
     
-    @IBAction func sendToWatch(_ sender: Any) {
-        buttonPressed(city: "Toronto")
-    }
+
     
     func buttonPressed(city: String) {
         self.cityLabel.text = city
@@ -81,6 +86,9 @@ class ViewController: UIViewController {
             
             print("Sunrise: \(sunriseTime!)")
             print("Sunset: \(sunsetTime!)")
+            self.sunriseLabel.text = "Sunrise: \(sunriseTime ?? "")"
+            self.sunsetLabel.text = "Sunset: \(sunsetTime ?? "")"
+            let sunData = [sunriseTime,sunsetTime]
             
 //            if self.session!.isWatchAppInstalled {
 //                print("Watch app is installed")
@@ -91,7 +99,7 @@ class ViewController: UIViewController {
             if let validSession = self.session, validSession.isReachable {
                 print("Sent")//5.1
                 // Create your Dictionay as per uses
-                let data: [String: Any] = ["iPhone": "hello" as Any]
+                let data: [String: Any] = ["iPhone": sunData as Any]
                 validSession.sendMessage(data, replyHandler: nil, errorHandler: nil)
                 
             }

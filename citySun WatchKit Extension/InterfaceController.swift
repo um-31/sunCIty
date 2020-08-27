@@ -14,7 +14,7 @@ import WatchConnectivity
 class InterfaceController: WKInterfaceController {
     
     var cityName = String()
-    let session = WCSession.default
+    var session = WCSession.default
     
     @IBOutlet weak var cityLabel: WKInterfaceLabel!
     @IBOutlet weak var sunriseLabel: WKInterfaceLabel!
@@ -29,15 +29,21 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
+        self.configureWatchKitSesstion()
         NotificationCenter.default.addObserver(forName: .saveNotificationName, object: nil, queue: nil) { (notification) in
             self.sunsetLabel.setText(notification.object as? String)
             self.willActivate()
         }
+    }
+    
+    
+    func configureWatchKitSesstion() {
+      
+      if WCSession.isSupported() {
+        session = WCSession.default
+        session.delegate = self
+        session.activate()
+      }
     }
     
     override func didDeactivate() {
@@ -89,8 +95,10 @@ extension InterfaceController: WCSessionDelegate {
   func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
     
     print("received data: \(message)")
-    if let value = message["iPhone"] as? String {//**7.1
-      self.sunsetLabel.setText("Sunset Time: \(value)")
+    if let value = message["iPhone"] as? [String] {//**7.1
+        print(value[0])
+        self.sunriseLabel.setText("Sunrise: \(value[0])")
+      self.sunsetLabel.setText("Sunset: \(value[1])")
     }
   }
 }

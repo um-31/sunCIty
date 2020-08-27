@@ -17,8 +17,8 @@
                                 <action selector="addCity" destination="AgC-eL-Hgc" id="NgG-od-fwn"/>
                             </connections>
                         </button>
-                        <label width="136" height="39" alignment="left" text="Sunrise:" id="iwN-D6-twN"/>
-                        <label width="136" height="36" alignment="left" text="Sunset:" id="Dw7-bb-oH5"/>
+                        <label height="42" alignment="left" text="Sunrise:" textAlignment="left" id="iwN-D6-twN"/>
+                        <label height="36" alignment="left" text="Sunset:" id="Dw7-bb-oH5"/>
                     </items>
                     <connections>
                         <outlet property="cityLabel" destination="RLI-qJ-H51" id="UMO-iZ-dEQ"/>
