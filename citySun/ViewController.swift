@@ -26,12 +26,12 @@ class ViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
         print("working")
-        NotificationCenter.default.addObserver(forName: .saveNotificationName, object: nil, queue: nil) { (notification) in
-            print("Working till here")
-            print(notification.object as! String)
-            self.cityLabel.text = notification.object as? String
-            self.buttonPressed(city: notification.object as! String)
-        }
+//        NotificationCenter.default.addObserver(forName: .saveNotificationName, object: nil, queue: nil) { (notification) in
+//            print("Working till here")
+//            print(notification.object as! String)
+//            self.cityLabel.text = notification.object as? String
+//            self.buttonPressed(city: notification.object as! String)
+//        }
 
         
     }
@@ -81,13 +81,18 @@ class ViewController: UIViewController {
             
             print("Sunrise: \(sunriseTime!)")
             print("Sunset: \(sunsetTime!)")
-            let data: [String: Any] = ["iPhone": sunsetTime as Any]
-            self.session?.sendMessage(data, replyHandler: nil, errorHandler: nil)
+            
+//            if self.session!.isWatchAppInstalled {
+//                print("Watch app is installed")
+//                self.session?.sendMessage(data, replyHandler: nil, errorHandler: nil)
+//            }
             print("working")
+            NotificationCenter.default.post(name: .saveNotificationName, object: sunsetTime)
             if let validSession = self.session, validSession.isReachable {
                 print("Sent")//5.1
-              // Create your Dictionay as per uses
-              validSession.sendMessage(data, replyHandler: nil, errorHandler: nil)
+                // Create your Dictionay as per uses
+                let data: [String: Any] = ["iPhone": "hello" as Any]
+                validSession.sendMessage(data, replyHandler: nil, errorHandler: nil)
                 
             }
         }

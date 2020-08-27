@@ -34,6 +34,10 @@ class InterfaceController: WKInterfaceController {
             session.delegate = self
             session.activate()
         }
+        NotificationCenter.default.addObserver(forName: .saveNotificationName, object: nil, queue: nil) { (notification) in
+            self.sunsetLabel.setText(notification.object as? String)
+            self.willActivate()
+        }
     }
     
     override func didDeactivate() {
@@ -56,7 +60,7 @@ class InterfaceController: WKInterfaceController {
                 if self.session.isCompanionAppInstalled {
                     print("app installed")
                     self.session.sendMessage(data, replyHandler: nil, errorHandler: nil)
-                    NotificationCenter.default.post(name: .saveNotificationName, object: self.cityName)
+//                    NotificationCenter.default.post(name: .saveNotificationName, object: self.cityName)
                 }else {
                     print("Not Installed")
                 }
