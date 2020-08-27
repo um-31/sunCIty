@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		317177CA63758B9E474DC3F8 /* Pods_citySun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F030AEE780473BB2A47DD5B8 /* Pods_citySun.framework */; };
+		472951D63F3A9E809CEDC365 /* Pods_citySun_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D90D37E17D81AFA47CEC0B /* Pods_citySun_WatchKit_Extension.framework */; };
+		85FC1843A40E61E91CA0FD8E /* Pods_citySun_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DBC6DEE3D9A1CF3C8A8EAC /* Pods_citySun_WatchKit_App.framework */; };
+		E969F60824F488E300CF610F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F60724F488E300CF610F /* AppDelegate.swift */; };
+		E969F60A24F488E300CF610F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F60924F488E300CF610F /* SceneDelegate.swift */; };
+		E969F60C24F488E300CF610F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F60B24F488E300CF610F /* ViewController.swift */; };
+		E969F60F24F488E300CF610F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E969F60D24F488E300CF610F /* Main.storyboard */; };
+		E969F61124F488E600CF610F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E969F61024F488E600CF610F /* Assets.xcassets */; };
+		E969F61424F488E600CF610F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E969F61224F488E600CF610F /* LaunchScreen.storyboard */; };
+		E969F61924F488E600CF610F /* citySun WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E969F61824F488E600CF610F /* citySun WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E969F61F24F488E600CF610F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E969F61D24F488E600CF610F /* Interface.storyboard */; };
+		E969F62124F488E600CF610F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E969F62024F488E600CF610F /* Assets.xcassets */; };
+		E969F62824F488E600CF610F /* citySun WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E969F62724F488E600CF610F /* citySun WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E969F62D24F488E600CF610F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F62C24F488E600CF610F /* InterfaceController.swift */; };
+		E969F62F24F488E600CF610F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F62E24F488E600CF610F /* ExtensionDelegate.swift */; };
+		E969F63124F488E600CF610F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F63024F488E600CF610F /* NotificationController.swift */; };
+		E969F63324F488E700CF610F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E969F63224F488E700CF610F /* Assets.xcassets */; };
+		E969F69024F632DC00CF610F /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F68F24F632DC00CF610F /* NotificationNameExtension.swift */; };
+		E969F69124F632DC00CF610F /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F68F24F632DC00CF610F /* NotificationNameExtension.swift */; };
+		E969F69324F73BA600CF610F /* PhoneToWatchNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F69224F73BA600CF610F /* PhoneToWatchNotification.swift */; };
+		E969F69424F73BA600CF610F /* PhoneToWatchNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F69224F73BA600CF610F /* PhoneToWatchNotification.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E969F61A24F488E600CF610F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E969F5FC24F488E300CF610F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E969F61724F488E600CF610F;
+			remoteInfo = "citySun WatchKit App";
+		};
+		E969F62924F488E600CF610F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E969F5FC24F488E300CF610F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E969F62624F488E600CF610F;
+			remoteInfo = "citySun WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E969F63B24F488E700CF610F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E969F62824F488E600CF610F /* citySun WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969F63F24F488E700CF610F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E969F61924F488E600CF610F /* citySun WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		431C20CA6B7E0521B8EB6B4B /* Pods-citySun WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citySun WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-citySun WatchKit App/Pods-citySun WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		78D90D37E17D81AFA47CEC0B /* Pods_citySun_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_citySun_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBD4819C003A93F39CFD631 /* Pods-citySun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citySun.release.xcconfig"; path = "Target Support Files/Pods-citySun/Pods-citySun.release.xcconfig"; sourceTree = "<group>"; };
+		8C841BEB63521D64C21D2507 /* Pods-citySun WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citySun WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-citySun WatchKit Extension/Pods-citySun WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		BE81F1A206BAEEF20BB606B6 /* Pods-citySun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citySun.debug.xcconfig"; path = "Target Support Files/Pods-citySun/Pods-citySun.debug.xcconfig"; sourceTree = "<group>"; };
+		C1DBC6DEE3D9A1CF3C8A8EAC /* Pods_citySun_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_citySun_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969F60424F488E300CF610F /* citySun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = citySun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969F60724F488E300CF610F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E969F60924F488E300CF610F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E969F60B24F488E300CF610F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E969F60E24F488E300CF610F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E969F61024F488E600CF610F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E969F61324F488E600CF610F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E969F61524F488E600CF610F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E969F61824F488E600CF610F /* citySun WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "citySun WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969F61E24F488E600CF610F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E969F62024F488E600CF610F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E969F62224F488E600CF610F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E969F62724F488E600CF610F /* citySun WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "citySun WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969F62C24F488E600CF610F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E969F62E24F488E600CF610F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E969F63024F488E600CF610F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E969F63224F488E700CF610F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E969F63424F488E700CF610F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E969F63524F488E700CF610F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E969F68F24F632DC00CF610F /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		E969F69224F73BA600CF610F /* PhoneToWatchNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneToWatchNotification.swift; sourceTree = "<group>"; };
+		ECA1AE6D274CD9FBFDD9A410 /* Pods-citySun WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citySun WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-citySun WatchKit Extension/Pods-citySun WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F030AEE780473BB2A47DD5B8 /* Pods_citySun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_citySun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B468C9CC6AF603AADE0F7 /* Pods-citySun WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citySun WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-citySun WatchKit App/Pods-citySun WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA77E2BDD5AEAC0AC736281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FC1843A40E61E91CA0FD8E /* Pods_citySun_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969F60124F488E300CF610F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317177CA63758B9E474DC3F8 /* Pods_citySun.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969F62424F488E600CF610F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472951D63F3A9E809CEDC365 /* Pods_citySun_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		906330D2B131E9EFCD61A860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F030AEE780473BB2A47DD5B8 /* Pods_citySun.framework */,
+				C1DBC6DEE3D9A1CF3C8A8EAC /* Pods_citySun_WatchKit_App.framework */,
+				78D90D37E17D81AFA47CEC0B /* Pods_citySun_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA75D786B91C99641A5611F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE81F1A206BAEEF20BB606B6 /* Pods-citySun.debug.xcconfig */,
+				7FBD4819C003A93F39CFD631 /* Pods-citySun.release.xcconfig */,
+				F06B468C9CC6AF603AADE0F7 /* Pods-citySun WatchKit App.debug.xcconfig */,
+				431C20CA6B7E0521B8EB6B4B /* Pods-citySun WatchKit App.release.xcconfig */,
+				ECA1AE6D274CD9FBFDD9A410 /* Pods-citySun WatchKit Extension.debug.xcconfig */,
+				8C841BEB63521D64C21D2507 /* Pods-citySun WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E969F5FB24F488E300CF610F = {
+			isa = PBXGroup;
+			children = (
+				E969F60624F488E300CF610F /* citySun */,
+				E969F61C24F488E600CF610F /* citySun WatchKit App */,
+				E969F62B24F488E600CF610F /* citySun WatchKit Extension */,
+				E969F60524F488E300CF610F /* Products */,
+				DA75D786B91C99641A5611F3 /* Pods */,
+				906330D2B131E9EFCD61A860 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E969F60524F488E300CF610F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E969F60424F488E300CF610F /* citySun.app */,
+				E969F61824F488E600CF610F /* citySun WatchKit App.app */,
+				E969F62724F488E600CF610F /* citySun WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E969F60624F488E300CF610F /* citySun */ = {
+			isa = PBXGroup;
+			children = (
+				E969F60724F488E300CF610F /* AppDelegate.swift */,
+				E969F60924F488E300CF610F /* SceneDelegate.swift */,
+				E969F60B24F488E300CF610F /* ViewController.swift */,
+				E969F68F24F632DC00CF610F /* NotificationNameExtension.swift */,
+				E969F69224F73BA600CF610F /* PhoneToWatchNotification.swift */,
+				E969F60D24F488E300CF610F /* Main.storyboard */,
+				E969F61024F488E600CF610F /* Assets.xcassets */,
+				E969F61224F488E600CF610F /* LaunchScreen.storyboard */,
+				E969F61524F488E600CF610F /* Info.plist */,
+			);
+			path = citySun;
+			sourceTree = "<group>";
+		};
+		E969F61C24F488E600CF610F /* citySun WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E969F61D24F488E600CF610F /* Interface.storyboard */,
+				E969F62024F488E600CF610F /* Assets.xcassets */,
+				E969F62224F488E600CF610F /* Info.plist */,
+			);
+			path = "citySun WatchKit App";
+			sourceTree = "<group>";
+		};
+		E969F62B24F488E600CF610F /* citySun WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E969F62C24F488E600CF610F /* InterfaceController.swift */,
+				E969F62E24F488E600CF610F /* ExtensionDelegate.swift */,
+				E969F63024F488E600CF610F /* NotificationController.swift */,
+				E969F63224F488E700CF610F /* Assets.xcassets */,
+				E969F63424F488E700CF610F /* Info.plist */,
+				E969F63524F488E700CF610F /* PushNotificationPayload.apns */,
+			);
+			path = "citySun WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E969F60324F488E300CF610F /* citySun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E969F64024F488E700CF610F /* Build configuration list for PBXNativeTarget "citySun" */;
+			buildPhases = (
+				6E8084546F16CE8484AC49A6 /* [CP] Check Pods Manifest.lock */,
+				E969F60024F488E300CF610F /* Sources */,
+				E969F60124F488E300CF610F /* Frameworks */,
+				E969F60224F488E300CF610F /* Resources */,
+				E969F63F24F488E700CF610F /* Embed Watch Content */,
+				80B2E460121C64D2296034D4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E969F61B24F488E600CF610F /* PBXTargetDependency */,
+			);
+			name = citySun;
+			productName = citySun;
+			productReference = E969F60424F488E300CF610F /* citySun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E969F61724F488E600CF610F /* citySun WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E969F63C24F488E700CF610F /* Build configuration list for PBXNativeTarget "citySun WatchKit App" */;
+			buildPhases = (
+				FAFB8687E2408AB24854FAC2 /* [CP] Check Pods Manifest.lock */,
+				E969F61624F488E600CF610F /* Resources */,
+				E969F63B24F488E700CF610F /* Embed App Extensions */,
+				2DA77E2BDD5AEAC0AC736281 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E969F62A24F488E600CF610F /* PBXTargetDependency */,
+			);
+			name = "citySun WatchKit App";
+			productName = "citySun WatchKit App";
+			productReference = E969F61824F488E600CF610F /* citySun WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E969F62624F488E600CF610F /* citySun WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E969F63824F488E700CF610F /* Build configuration list for PBXNativeTarget "citySun WatchKit Extension" */;
+			buildPhases = (
+				618D8C0271A31D70F4474881 /* [CP] Check Pods Manifest.lock */,
+				E969F62324F488E600CF610F /* Sources */,
+				E969F62424F488E600CF610F /* Frameworks */,
+				E969F62524F488E600CF610F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "citySun WatchKit Extension";
+			productName = "citySun WatchKit Extension";
+			productReference = E969F62724F488E600CF610F /* citySun WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E969F5FC24F488E300CF610F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Udhay;
+				TargetAttributes = {
+					E969F60324F488E300CF610F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					E969F61724F488E600CF610F = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
+					E969F62624F488E600CF610F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = E969F5FF24F488E300CF610F /* Build configuration list for PBXProject "citySun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E969F5FB24F488E300CF610F;
+			productRefGroup = E969F60524F488E300CF610F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E969F60324F488E300CF610F /* citySun */,
+				E969F61724F488E600CF610F /* citySun WatchKit App */,
+				E969F62624F488E600CF610F /* citySun WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E969F60224F488E300CF610F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969F61424F488E600CF610F /* LaunchScreen.storyboard in Resources */,
+				E969F61124F488E600CF610F /* Assets.xcassets in Resources */,
+				E969F60F24F488E300CF610F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969F61624F488E600CF610F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969F62124F488E600CF610F /* Assets.xcassets in Resources */,
+				E969F61F24F488E600CF610F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969F62524F488E600CF610F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969F63324F488E700CF610F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		618D8C0271A31D70F4474881 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-citySun WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8084546F16CE8484AC49A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-citySun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B2E460121C64D2296034D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-citySun/Pods-citySun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-citySun/Pods-citySun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-citySun/Pods-citySun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAFB8687E2408AB24854FAC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-citySun WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E969F60024F488E300CF610F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969F60C24F488E300CF610F /* ViewController.swift in Sources */,
+				E969F60824F488E300CF610F /* AppDelegate.swift in Sources */,
+				E969F60A24F488E300CF610F /* SceneDelegate.swift in Sources */,
+				E969F69324F73BA600CF610F /* PhoneToWatchNotification.swift in Sources */,
+				E969F69024F632DC00CF610F /* NotificationNameExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969F62324F488E600CF610F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969F63124F488E600CF610F /* NotificationController.swift in Sources */,
+				E969F62F24F488E600CF610F /* ExtensionDelegate.swift in Sources */,
+				E969F62D24F488E600CF610F /* InterfaceController.swift in Sources */,
+				E969F69424F73BA600CF610F /* PhoneToWatchNotification.swift in Sources */,
+				E969F69124F632DC00CF610F /* NotificationNameExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E969F61B24F488E600CF610F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E969F61724F488E600CF610F /* citySun WatchKit App */;
+			targetProxy = E969F61A24F488E600CF610F /* PBXContainerItemProxy */;
+		};
+		E969F62A24F488E600CF610F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E969F62624F488E600CF610F /* citySun WatchKit Extension */;
+			targetProxy = E969F62924F488E600CF610F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E969F60D24F488E300CF610F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E969F60E24F488E300CF610F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E969F61224F488E600CF610F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E969F61324F488E600CF610F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E969F61D24F488E600CF610F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E969F61E24F488E600CF610F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E969F63624F488E700CF610F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E969F63724F488E700CF610F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E969F63924F488E700CF610F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA1AE6D274CD9FBFDD9A410 /* Pods-citySun WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAW38RG3LM;
+				INFOPLIST_FILE = "citySun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UM-31.citySun.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		E969F63A24F488E700CF610F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C841BEB63521D64C21D2507 /* Pods-citySun WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAW38RG3LM;
+				INFOPLIST_FILE = "citySun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UM-31.citySun.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		E969F63D24F488E700CF610F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06B468C9CC6AF603AADE0F7 /* Pods-citySun WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAW38RG3LM;
+				IBSC_MODULE = citySun_WatchKit_Extension;
+				INFOPLIST_FILE = "citySun WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UM-31.citySun.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		E969F63E24F488E700CF610F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431C20CA6B7E0521B8EB6B4B /* Pods-citySun WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAW38RG3LM;
+				IBSC_MODULE = citySun_WatchKit_Extension;
+				INFOPLIST_FILE = "citySun WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UM-31.citySun.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		E969F64124F488E700CF610F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE81F1A206BAEEF20BB606B6 /* Pods-citySun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAW38RG3LM;
+				INFOPLIST_FILE = citySun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UM-31.citySun";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E969F64224F488E700CF610F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FBD4819C003A93F39CFD631 /* Pods-citySun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAW38RG3LM;
+				INFOPLIST_FILE = citySun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UM-31.citySun";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E969F5FF24F488E300CF610F /* Build configuration list for PBXProject "citySun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969F63624F488E700CF610F /* Debug */,
+				E969F63724F488E700CF610F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E969F63824F488E700CF610F /* Build configuration list for PBXNativeTarget "citySun WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969F63924F488E700CF610F /* Debug */,
+				E969F63A24F488E700CF610F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E969F63C24F488E700CF610F /* Build configuration list for PBXNativeTarget "citySun WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969F63D24F488E700CF610F /* Debug */,
+				E969F63E24F488E700CF610F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E969F64024F488E700CF610F /* Build configuration list for PBXNativeTarget "citySun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969F64124F488E700CF610F /* Debug */,
+				E969F64224F488E700CF610F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E969F5FC24F488E300CF610F /* Project object */;
+}
